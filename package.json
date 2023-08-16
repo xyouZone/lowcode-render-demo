@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author": "zhengxunyou <zhengxunyou@myhexin.com>",
+  "author": "zhengxunyou",
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
