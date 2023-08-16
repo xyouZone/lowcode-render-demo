@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "author": "zhengxunyou <zhengxunyou@myhexin.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@alilc/lowcode-plugin-inject": "^1.2.2",
+    "@alilc/lowcode-react-renderer": "^1.1.9",
+    "@alilc/lowcode-utils": "^1.1.9",
+    "umi": "^4.0.75"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "typescript": "^5.1.6"
+  }
+}
