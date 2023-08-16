@@ -9,7 +9,7 @@ const Home = () => {
   const [data,setData] = useState({schema: undefined,components: undefined})
   const [info, setInfo] = useState<{id: string}>()
 
-  // 模拟查询id
+  // 查询下一个表单,每次查询都会返回下一步的schema和id
   const queryProgess = () => {
     return new Promise((resolve,reject) => {
       setTimeout(() => {
@@ -80,7 +80,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    // id改变，刷新apphellper
+    // id改变，刷新apphellper，带入最新的id
     console.log('info改变了===', info)
     setAppHelper({
       utils: {
@@ -111,7 +111,7 @@ const Home = () => {
     }
   })
   useEffect(() => {
-    // 请求json
+    // 请求第一个表单
     handleProgressQuery()
   },[])
   return <div className="lowcode-plugin-sample-preview">
